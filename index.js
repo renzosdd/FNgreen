@@ -18,6 +18,7 @@ function login(){
   var userEmail = document.getElementById("inputEmail").value;
   var userLogin = document.getElementById('inputPassword').value; 
   window.alert(userEmail + userLogin);
+  console.log("hola")
   window.location.href ="./indexx.html"; 
   /*firebase.auth().signInWithEmailAndPassword(userEmail, userLogin).catch(function(error) {
     // Handle Errors here.
