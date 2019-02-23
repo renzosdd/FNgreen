@@ -1,4 +1,4 @@
-firebase.auth().onAuthStateChanged(function(user) {
+/*firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // Hay usuario logueado
     var user = firebase.auth().currentUser;
@@ -13,17 +13,21 @@ firebase.auth().onAuthStateChanged(function(user) {
     //console.log("Nohayusuario" +email_id);
   }
 });
-
+*/
 function login(){
   var userEmail = document.getElementById("inputEmail").value;
   var userLogin = document.getElementById('inputPassword').value; 
-  firebase.auth().signInWithEmailAndPassword(userEmail, userLogin).catch(function(error) {
+  window.alert(userEmail + userLogin);
+  window.location.href ="./indexx.html"; 
+  /*firebase.auth().signInWithEmailAndPassword(userEmail, userLogin).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     window.alert("Error : " + errorMessage);
   });
+  
   //window.alert(userEmail + " -- " + userLogin);
+  */
 }
 
 
