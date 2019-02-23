@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:'asap',sans-serif;
+}
+.ibody{
+    background-color: #ecf0f3;
+    margin: 30px auto;
+    width: 500px;
+}
+.jumbotron{
+    padding: 16px;
+}
+.jumbotron h1{
+    font-size: 36px;
+    text-align: center;
+
+}
