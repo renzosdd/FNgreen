@@ -14,7 +14,8 @@
   }
 });
 */
-function login(){
+
+document.getElementById('login').addEventListener('submit', function (e) {
   var userEmail = document.getElementById("inputEmail").value;
   var userLogin = document.getElementById('inputPassword').value; 
   window.alert(userEmail + userLogin);
@@ -29,7 +30,9 @@ function login(){
   
   //window.alert(userEmail + " -- " + userLogin);
   */
-}
+ e.preventDefault();
+ return false;
+});
 
 
 
